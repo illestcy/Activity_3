@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    
 </head>
 <body>
     <div style="text-align: center;">
@@ -11,7 +12,7 @@
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
         <div style="margin-top: 1rem;">
-            <button>Login</button>
+            <button id="buttonLogin"onclick="alert('Login has been clicked.')">Login</button>
         </div>
 
 
@@ -20,4 +21,14 @@
     </div>
     
 </body>
+<script>
+    console.log("Hello World");
+    alert("Be not Afraid!");
+    let btnLogin = document.querySelector('#buttonLogin');
+    btnLogin.onclick = function () {
+        alert('Login has been clicked')
+    }
+
+
+</script>
 </html>
